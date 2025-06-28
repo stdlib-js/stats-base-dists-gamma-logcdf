@@ -58,20 +58,32 @@ where `alpha` is the shape parameter and `beta` is the rate parameter of the dis
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-gamma-logcdf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import logcdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma-logcdf@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma-logcdf@esm/index.mjs';
+var logcdf = require( '@stdlib/stats-base-dists-gamma-logcdf' );
 ```
 
 #### logcdf( x, alpha, beta )
@@ -146,6 +158,99 @@ y = mylogcdf( 4.0 );
 // returns ~-0.064
 ```
 
+* * *
+
+### C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+#### Usage
+
+```c
+#include "stdlib/stats/base/dists/gamma/logcdf.h"
+```
+
+#### stdlib_base_dists_gamma_logcdf( x, alpha, beta )
+
+Evaluates the natural logarithm of the cumulative distribution function (CDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta`.
+
+```c
+double out = stdlib_base_dists_gamma_logcdf( 2.0, 0.5, 1.0 );
+// returns ~-0.047
+
+out = stdlib_base_dists_gamma_logcdf( 0.1, 1.0, 1.0 );
+// returns ~-2.352
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **beta**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_gamma_logcdf( const double x, const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/gamma/logcdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double a, double b ) {
+    double r = ( (double)rand() / ( (double)RAND_MAX + 1.0 ) );
+    return a + ( r * ( b - a ) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 2.0 );
+        alpha = random_uniform( 1.0, 10.0 );
+        beta = random_uniform( 1.0, 10.0 );
+        y = stdlib_base_dists_gamma_logcdf( x, alpha, beta );
+        printf( "x: %lf, α: %lf, β: %lf, ln(F(x;α,β)): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 </section>
 
 <!-- /.usage -->
@@ -156,14 +261,9 @@ y = mylogcdf( 4.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import logcdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-gamma-logcdf@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var logcdf = require( '@stdlib/stats-base-dists-gamma-logcdf' );
 
 var alpha;
 var beta;
@@ -178,10 +278,6 @@ for ( i = 0; i < 10; i++ ) {
     y = logcdf( x, alpha, beta );
     console.log( 'x: %d, α: %d, β: %d, ln(F(x;α,β)): %d', x.toFixed( 4 ), alpha.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -205,7 +301,7 @@ for ( i = 0; i < 10; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -274,7 +370,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [degenerate-distribution]: https://en.wikipedia.org/wiki/Degenerate_distribution
 
-[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc/tree/esm
+[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc
 
 </section>
 
