@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-28)
+## Unreleased (2025-06-29)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`797e2e1`](https://github.com/stdlib-js/stdlib/commit/797e2e1202ae1d2c6f282e8ee3a47703e29480c9) - **chore:** clean-up and update tests _(by Athan Reines)_
 -   [`b9e85bb`](https://github.com/stdlib-js/stdlib/commit/b9e85bb880c148b413a2cd2d8be4146994d12775) - **style:** remove extra spaces _(by Philipp Burckhardt)_
 -   [`728ba29`](https://github.com/stdlib-js/stdlib/commit/728ba29100d52c77c98d5ffc618b8accc6dcaf94) - **feat:** add C implementation for `stats/base/dists/gamma/logcdf` _(by Philipp Burckhardt)_
 -   [`c7860af`](https://github.com/stdlib-js/stdlib/commit/c7860af1896d84360294b65f3e37982ca631c435) - **bench:** refactor random number generation in `stats/base/dists/gamma` [(#4929)](https://github.com/stdlib-js/stdlib/pull/4929) _(by Karan Anand)_
@@ -36,8 +37,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
 
