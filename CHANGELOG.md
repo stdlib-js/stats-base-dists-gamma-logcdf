@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2025-09-07)
+## 0.3.0 (2026-01-30)
 
 <section class="features">
 
@@ -23,7 +23,7 @@
 <details>
 
 -   [`e2efe32`](https://github.com/stdlib-js/stdlib/commit/e2efe32914d0d9dae5da34e6f7e7bf7655430710) - **chore:** rename exported variable in d.ts file to match name used in example code _(by Philipp Burckhardt)_
--   [`ceef77f`](https://github.com/stdlib-js/stdlib/commit/ceef77fd9f7d409cc5819829e8a01f7a5fe45148) - **docs:** replace manual `for` loop in examples [(#8019)](https://github.com/stdlib-js/stdlib/pull/8019) _(by Harsh)_
+-   [`ceef77f`](https://github.com/stdlib-js/stdlib/commit/ceef77fd9f7d409cc5819829e8a01f7a5fe45148) - **docs:** replace manual `for` loop in examples [(#8019)](https://github.com/stdlib-js/stdlib/pull/8019) _(by Harsh Yadav)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
@@ -45,7 +45,7 @@
 A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
 
