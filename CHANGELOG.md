@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-01)
+## Unreleased (2026-09-21)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
 -   [`cae5335`](https://github.com/stdlib-js/stdlib/commit/cae53357950b4c389b0020878c268995cd79d222) - **docs:** propagate develop fixes to sibling packages [(#12736)](https://github.com/stdlib-js/stdlib/pull/12736) _(by Philipp Burckhardt)_
 -   [`83838f6`](https://github.com/stdlib-js/stdlib/commit/83838f6744d5011c8c682f9f162a5b645eca0858) - **docs:** fix sections in `stats/base/dists/gamma` [(#11862)](https://github.com/stdlib-js/stdlib/pull/11862) _(by Philipp Burckhardt)_
 -   [`3480dc2`](https://github.com/stdlib-js/stdlib/commit/3480dc202d5214003486601367322d985b8bfe29) - **chore:** address commit comments for commit `9c42a28` [(#10853)](https://github.com/stdlib-js/stdlib/pull/10853) _(by Partha Das)_
